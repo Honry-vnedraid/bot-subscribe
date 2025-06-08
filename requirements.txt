@@ -1,3 +1,6 @@
 python-dotenv
 telethon
 python-telegram-bot
+httpx
+fastapi
+uvicorn[standard]

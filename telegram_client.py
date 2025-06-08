@@ -31,7 +31,7 @@ async def send_to_webhook(data):
             print(f"[Webhook Error] {e}")
 
 async def send_to_microservice(data):
-    url = "http://localhost:80/add/news"
+    url = "http://localhost:8080/add/news"
     try:
         async with httpx.AsyncClient() as client:
             response = await client.post(url, json=data)
